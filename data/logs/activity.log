@@ -1,0 +1,22 @@
+2025-05-30 03:22:40,075 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-30 03:23:24,815 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-30 03:24:03,583 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-30 03:24:46,148 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
