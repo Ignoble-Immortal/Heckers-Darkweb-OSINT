@@ -1,4 +1,4 @@
-import os
+"""import os
 import sys
 import json
 import logging
@@ -47,6 +47,67 @@ if __name__ == "__main__":
     with open('outputs/results.json', 'w') as f:
         for entry in results:
             f.write(json.dumps(entry) + '\n')
+
+    print("[✓] Crawling completed.")
+    logging.info("Crawling completed.")"""
+
+import os
+import sys
+import json
+import logging
+from datetime import datetime
+from core import analyzer, screenshot, threat_feed
+from core.utils import is_valid_onion_url, normalize_url
+from core.crawler import TorCrawler
+from config import KEYWORDS
+
+os.makedirs("outputs", exist_ok=True)
+os.makedirs("data/logs", exist_ok=True)
+logging.basicConfig(filename="data/logs/activity.log", level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
+
+RESULTS_FILE = 'outputs/results.json'
+
+def handle_page(url, html):
+    logging.info(f"Analyzing {url}")
+    matched = analyzer.search_keywords(html, KEYWORDS)
+    meta = analyzer.extract_metadata(html)
+    is_malicious = threat_feed.check_blacklist(url)
+    screenshot_path = f"outputs/{url.split('//')[-1].replace('/', '_')}.png"
+    screenshot.capture_screenshot(url, screenshot_path)
+
+    result = {
+        'url': url,
+        'keywords_found': list(matched.keys()),
+        'metadata': meta,
+        'blacklisted': is_malicious,
+        'screenshot': screenshot_path,
+        'timestamp': datetime.utcnow().isoformat()
+    }
+
+    # Append result incrementally to file
+    with open(RESULTS_FILE, 'a') as f:
+        f.write(json.dumps(result) + '\n')
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python main.py <start_onion_url>")
+        sys.exit(1)
+
+    start_url = sys.argv[1]
+    if not is_valid_onion_url(start_url):
+        print("[!] Invalid .onion URL.")
+        sys.exit(1)
+
+    # Clear previous results file
+    if os.path.exists(RESULTS_FILE):
+        os.remove(RESULTS_FILE)
+
+    normalized_start_url = normalize_url(start_url)
+    crawler = TorCrawler()
+    try:
+        crawler.crawl(normalized_start_url, 0, handle_page)
+    finally:
+        crawler.close()
 
     print("[✓] Crawling completed.")
     logging.info("Crawling completed.")

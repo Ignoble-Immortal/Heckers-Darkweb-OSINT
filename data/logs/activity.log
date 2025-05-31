@@ -20,3 +20,53 @@ WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
 TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
 bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
 
+2025-05-30 05:20:24,128 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-30 05:20:59,185 INFO:Analyzing http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion
+2025-05-30 05:21:26,743 INFO:Screenshot saved to outputs/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png
+2025-05-30 05:21:30,389 INFO:Crawling http://22tojepqmpah32fkeuurutki7o5bmb45uhmgzdg4l2tk34fkdafgt7id.onion at depth 1
+2025-05-30 05:22:07,569 WARNING:Selenium error on http://22tojepqmpah32fkeuurutki7o5bmb45uhmgzdg4l2tk34fkdafgt7id.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-30 05:22:46,273 WARNING:Selenium error on http://22tojepqmpah32fkeuurutki7o5bmb45uhmgzdg4l2tk34fkdafgt7id.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 00:32:18,587 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-31 00:32:52,184 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 00:33:26,753 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 00:33:38,821 INFO:Analyzing http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion
+2025-05-31 00:34:10,426 ERROR:Screenshot error for http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: WebDriver session does not exist, or is not active
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+InvalidSessionIDError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:442:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.session@chrome://remote/content/shared/webdriver/Assert.sys.mjs:37:4
+despatch@chrome://remote/content/marionette/server.sys.mjs:317:19
+execute@chrome://remote/content/marionette/server.sys.mjs:291:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:264:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:265:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:496:20
+
+2025-05-31 00:34:11,950 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1f0b1ad8d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/f26cbcd6-3c1f-4735-b4b2-e20db4a7c292
+2025-05-31 00:34:11,950 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1f0b027050>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/f26cbcd6-3c1f-4735-b4b2-e20db4a7c292
+2025-05-31 00:34:11,951 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1f0b0276d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/f26cbcd6-3c1f-4735-b4b2-e20db4a7c292
