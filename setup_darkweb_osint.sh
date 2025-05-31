@@ -22,9 +22,10 @@ USER_AGENTS = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:53.0) Gecko/20100101 Firefox/53.0'
 ]
 
-KEYWORDS = {'bitcoin', 'hacking', 'market', 'drugs'}
+KEYWORDS = {'bitcoin', 'hacking', 'market', 'drugs','carding','fraud','scam','hack','wiki','forum'}
 MAX_DEPTH = 2
 CRAWL_LIMIT = 50
+
 EOF
 
 # core/utils.py
@@ -57,60 +58,101 @@ EOF
 
 # core/crawler.py
 cat > darkweb-osint/core/crawler.py << 'EOF'
-import requests
+import logging
 import time
 import random
-import logging
-from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from selenium.common.exceptions import TimeoutException, WebDriverException
 from urllib.parse import urljoin
-from config import TOR_PROXY, MAX_DEPTH, CRAWL_LIMIT
+from config import MAX_DEPTH, CRAWL_LIMIT, USER_AGENTS
 from core.utils import get_random_user_agent, is_valid_onion_url, normalize_url
 
-logging.basicConfig(level=logging.INFO)
 CRAWLED_URLS = set()
 
-def fetch_page(url, retries=3):
-    for attempt in range(retries):
+class TorCrawler:
+    def __init__(self):
+        self.options = Options()
+        self.options.headless = True
+        self.options.set_preference('network.proxy.type', 1)
+        self.options.set_preference('network.proxy.socks', '127.0.0.1')
+        self.options.set_preference('network.proxy.socks_port', 9050)
+        self.options.set_preference("network.proxy.socks_remote_dns", True)
+        self.options.set_preference("dom.webdriver.enabled", False)
+        self.options.set_preference('useAutomationExtension', False)
+
+        # Set random user agent
+        user_agent = random.choice(USER_AGENTS)
+        self.options.set_preference("general.useragent.override", user_agent)
+
         try:
-            with requests.Session() as session:
-                session.proxies.update(TOR_PROXY)
-                session.headers.update({'User-Agent': get_random_user_agent()})
-                res = session.get(url, timeout=15)
-                if res.status_code == 200:
-                    return res.text
-                else:
-                    logging.warning(f"Non-200 status code {res.status_code} for {url}")
-        except requests.exceptions.RequestException as e:
-            logging.warning(f"Request error for {url}: {e}")
-            time.sleep(2 ** attempt)
-    return None
+            self.driver = webdriver.Firefox(options=self.options)
+            self.driver.set_page_load_timeout(30)
+        except Exception as e:
+            logging.error(f"Failed to start Firefox webdriver: {e}")
+            self.driver = None
 
-def extract_links(html, base_url):
-    soup = BeautifulSoup(html, 'html.parser')
-    links = set()
-    for tag in soup.find_all('a', href=True):
-        abs_url = urljoin(base_url, tag['href'])
-        if is_valid_onion_url(abs_url):
-            normalized = normalize_url(abs_url.split('?')[0].split('#')[0])
-            links.add(normalized)
-    return links
+    def fetch_page(self, url, retries=3):
+        if not self.driver:
+            logging.error("Webdriver not initialized.")
+            return None
 
-def crawl(url, depth, callback):
-    normalized_url = normalize_url(url)
-    if depth > MAX_DEPTH or len(CRAWLED_URLS) >= CRAWL_LIMIT or normalized_url in CRAWLED_URLS:
-        return
-    CRAWLED_URLS.add(normalized_url)
-    logging.info(f"Crawling {normalized_url} at depth {depth}")
-    html = fetch_page(normalized_url)
-    if not html:
-        logging.warning(f"Failed to fetch {normalized_url}")
-        return
-    callback(normalized_url, html)
-    time.sleep(random.uniform(3, 5))
-    for link in extract_links(html, normalized_url):
-        if len(CRAWLED_URLS) >= CRAWL_LIMIT:
-            break
-        crawl(link, depth + 1, callback)
+        for attempt in range(retries):
+            try:
+                self.driver.get(url)
+                time.sleep(5)  # wait for JS to load
+                html = self.driver.page_source
+                return html
+            except (TimeoutException, WebDriverException) as e:
+                logging.warning(f"Selenium error on {url}: {e}")
+                time.sleep(2 ** attempt)
+        return None
+
+    def capture_screenshot(self, url, save_path):
+        if not self.driver:
+            logging.error("Webdriver not initialized for screenshot.")
+            return False
+        try:
+            self.driver.get(url)
+            time.sleep(5)  # wait for page to load
+            self.driver.save_screenshot(save_path)
+            logging.info(f"Screenshot saved to {save_path}")
+            return True
+        except Exception as e:
+            logging.error(f"Screenshot error for {url}: {e}")
+            return False
+
+    def extract_links(self, html, base_url):
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html, 'html.parser')
+        links = set()
+        for tag in soup.find_all('a', href=True):
+            abs_url = urljoin(base_url, tag['href'])
+            if is_valid_onion_url(abs_url):
+                normalized = normalize_url(abs_url.split('?')[0].split('#')[0])
+                links.add(normalized)
+        return links
+
+    def crawl(self, url, depth, callback):
+        normalized_url = normalize_url(url)
+        if depth > MAX_DEPTH or len(CRAWLED_URLS) >= CRAWL_LIMIT or normalized_url in CRAWLED_URLS:
+            return
+        CRAWLED_URLS.add(normalized_url)
+        logging.info(f"Crawling {normalized_url} at depth {depth}")
+        html = self.fetch_page(normalized_url)
+        if not html:
+            logging.warning(f"Failed to fetch {normalized_url}")
+            return
+        callback(normalized_url, html)
+        time.sleep(3)  # polite delay
+        for link in self.extract_links(html, normalized_url):
+            if len(CRAWLED_URLS) >= CRAWL_LIMIT:
+                break
+            self.crawl(link, depth + 1, callback)
+
+    def close(self):
+        if self.driver:
+            self.driver.quit()
 EOF
 
 # core/analyzer.py
@@ -191,16 +233,99 @@ import os
 import sys
 import json
 import logging
+import threading
+import time
 from datetime import datetime
-from core import crawler, analyzer, screenshot, threat_feed
-from config import KEYWORDS
+from flask import Flask, render_template_string, send_from_directory
+from core import analyzer, threat_feed
 from core.utils import is_valid_onion_url, normalize_url
+from core.crawler import TorCrawler
+from config import KEYWORDS
 
 os.makedirs("outputs", exist_ok=True)
 os.makedirs("data/logs", exist_ok=True)
 logging.basicConfig(filename="data/logs/activity.log", level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
 
-results = []
+RESULTS_FILE = 'outputs/results.json'
+
+app = Flask(__name__)
+
+TEMPLATE = '''
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heckers' Darkweb Dashboard</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        img { max-width: 150px; max-height: 100px; }
+    </style>
+    <meta http-equiv="refresh" content="10">
+</head>
+<body>
+    <h1>Heckers' Darkweb OSINT Crawl Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>URL</th>
+                <th>Active</th>
+                <th>Blacklisted</th>
+                <th>Keywords Found</th>
+                <th>Title</th>
+                <th>Screenshot</th>
+                <th>Timestamp (UTC)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in results %}
+            <tr>
+                <td><a href="{{ entry.url }}" target="_blank">{{ entry.url }}</a></td>
+                <td>{{ 'Yes' if entry.active else 'No' }}</td>
+                <td>{{ 'Yes' if entry.blacklisted else 'No' }}</td>
+                <td>{{ entry.keywords_found | join(', ') }}</td>
+                <td>{{ entry.metadata.title }}</td>
+                <td>
+                    {% if entry.screenshot and entry.active %}
+                    <a href="/screenshots/{{ entry.screenshot_filename }}" target="_blank">
+                        <img src="/screenshots/{{ entry.screenshot_filename }}" alt="screenshot">
+                    </a>
+                    {% else %}
+                    N/A
+                    {% endif %}
+                </td>
+                <td>{{ entry.timestamp }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>Page refreshes every 10 seconds.</p>
+</body>
+</html>
+'''
+
+@app.route('/')
+def index():
+    results = []
+    if os.path.exists(RESULTS_FILE):
+        with open(RESULTS_FILE, 'r') as f:
+            for line in f:
+                try:
+                    entry = json.loads(line)
+                    entry['active'] = bool(entry.get('keywords_found') or entry.get('metadata', {}).get('title'))
+                    entry['screenshot_filename'] = os.path.basename(entry.get('screenshot', ''))
+                    results.append(entry)
+                except json.JSONDecodeError:
+                    continue
+    return render_template_string(TEMPLATE, results=results)
+
+@app.route('/screenshots/<path:filename>')
+def screenshots(filename):
+    return send_from_directory('outputs', filename)
+
+def run_dashboard():
+    print("Starting Flask dashboard at http://127.0.0.1:5000")
+    app.run(host='127.0.0.1', port=5000, debug=False, use_reloader=False)
 
 def handle_page(url, html):
     logging.info(f"Analyzing {url}")
@@ -208,17 +333,23 @@ def handle_page(url, html):
     meta = analyzer.extract_metadata(html)
     is_malicious = threat_feed.check_blacklist(url)
     screenshot_path = f"outputs/{url.split('//')[-1].replace('/', '_')}.png"
-    screenshot.capture_screenshot(url, screenshot_path)
+
+    # Use crawler's screenshot method to reuse driver
+    success = crawler.capture_screenshot(url, screenshot_path)
+    if not success:
+        logging.warning(f"Failed to capture screenshot for {url}")
 
     result = {
         'url': url,
         'keywords_found': list(matched.keys()),
         'metadata': meta,
         'blacklisted': is_malicious,
-        'screenshot': screenshot_path,
+        'screenshot': screenshot_path if success else '',
         'timestamp': datetime.utcnow().isoformat()
     }
-    results.append(result)
+
+    with open(RESULTS_FILE, 'a') as f:
+        f.write(json.dumps(result) + '\n')
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -230,15 +361,31 @@ if __name__ == "__main__":
         print("[!] Invalid .onion URL.")
         sys.exit(1)
 
+    if os.path.exists(RESULTS_FILE):
+        os.remove(RESULTS_FILE)
+
+    # Start Flask dashboard in background thread
+    dashboard_thread = threading.Thread(target=run_dashboard, daemon=True)
+    dashboard_thread.start()
+
     normalized_start_url = normalize_url(start_url)
-    crawler.crawl(normalized_start_url, 0, handle_page)
+    crawler = TorCrawler()
+    try:
+        crawler.crawl(normalized_start_url, 0, handle_page)
+    finally:
+        crawler.close()
 
-    with open('outputs/results.json', 'w') as f:
-        for entry in results:
-            f.write(json.dumps(entry) + '\n')
-
-    print("[✓] Crawling completed.")
+    print("[✓] Crawling completed. Dashboard running at http://127.0.0.1:5000")
     logging.info("Crawling completed.")
+    # Keep main thread alive to keep dashboard running
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("\nExiting...")
+        logging.info("Exiting on user interrupt.")
+        crawler.close()
+        sys.exit(0)
 EOF
 
 # requirements.txt
@@ -248,6 +395,7 @@ beautifulsoup4
 selenium
 stem
 lxml
+Flask
 EOF
 
 # tools/feeds.txt

@@ -9,6 +9,6 @@ USER_AGENTS = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:53.0) Gecko/20100101 Firefox/53.0'
 ]
 
-KEYWORDS = {'bitcoin', 'hacking', 'market', 'drugs'}
+KEYWORDS = {'bitcoin', 'hacking', 'market', 'drugs','carding','fraud','scam','hack','wiki','forum'}
 MAX_DEPTH = 2
 CRAWL_LIMIT = 50
