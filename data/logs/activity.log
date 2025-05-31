@@ -70,3 +70,395 @@ _onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:496:20
 2025-05-31 00:34:11,950 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1f0b1ad8d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/f26cbcd6-3c1f-4735-b4b2-e20db4a7c292
 2025-05-31 00:34:11,950 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1f0b027050>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/f26cbcd6-3c1f-4735-b4b2-e20db4a7c292
 2025-05-31 00:34:11,951 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1f0b0276d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/f26cbcd6-3c1f-4735-b4b2-e20db4a7c292
+2025-05-31 01:04:50,043 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 01:04:50,043 INFO:[33mPress CTRL+C to quit[0m
+2025-05-31 01:04:53,580 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-31 01:05:18,774 INFO:Analyzing http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion
+2025-05-31 01:05:42,441 INFO:Screenshot saved to outputs/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png
+2025-05-31 01:05:46,143 INFO:Crawling http://darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion at depth 1
+2025-05-31 01:06:06,490 INFO:Analyzing http://darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion
+2025-05-31 01:06:19,784 INFO:Screenshot saved to outputs/darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion.png
+2025-05-31 01:06:23,403 INFO:Crawling http://darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion/redirect.php at depth 2
+2025-05-31 01:06:28,960 INFO:Analyzing http://darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion/redirect.php
+2025-05-31 01:06:37,634 INFO:Screenshot saved to outputs/darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion_redirect.php.png
+2025-05-31 01:06:41,207 INFO:Crawling http://darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion/Contact.php at depth 2
+2025-05-31 01:06:47,796 INFO:Analyzing http://darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion/Contact.php
+2025-05-31 01:06:55,778 INFO:Screenshot saved to outputs/darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion_Contact.php.png
+2025-05-31 01:06:59,331 INFO:Crawling http://darksid3f3ggicny772rvdmrcgfbtixsyjpdgm6unh5qci6r24ukg4qd.onion/Advertising.spot at depth 2
+2025-05-31 01:06:59,668 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9166faa250>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/046a1d87-e28c-45b9-b9e5-fe208e6d9cae
+2025-05-31 01:06:59,669 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9166fa9850>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/046a1d87-e28c-45b9-b9e5-fe208e6d9cae
+2025-05-31 01:06:59,670 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9166fa8e50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/046a1d87-e28c-45b9-b9e5-fe208e6d9cae
+2025-05-31 01:19:55,237 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 01:19:55,238 INFO:[33mPress CTRL+C to quit[0m
+2025-05-31 01:19:59,323 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-31 01:20:35,489 INFO:Analyzing http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion
+2025-05-31 01:20:43,891 INFO:Screenshot saved to outputs/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png
+2025-05-31 01:20:46,903 INFO:Crawling http://darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion at depth 1
+2025-05-31 01:21:16,897 INFO:Analyzing http://darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion
+2025-05-31 01:21:22,652 INFO:Screenshot saved to outputs/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png
+2025-05-31 01:21:25,665 INFO:Crawling http://tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion at depth 2
+2025-05-31 01:21:36,486 INFO:Analyzing http://tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion
+2025-05-31 01:21:46,523 INFO:Screenshot saved to outputs/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png
+2025-05-31 01:21:49,529 INFO:Crawling http://hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion at depth 2
+2025-05-31 01:22:04,946 INFO:Analyzing http://hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion
+2025-05-31 01:22:19,106 INFO:Screenshot saved to outputs/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png
+2025-05-31 01:22:22,111 INFO:Crawling http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion at depth 2
+2025-05-31 01:22:37,226 INFO:Analyzing http://search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion
+2025-05-31 01:22:42,952 INFO:Screenshot saved to outputs/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png
+2025-05-31 01:22:45,960 INFO:Crawling http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion at depth 2
+2025-05-31 01:22:56,190 INFO:127.0.0.1 - - [31/May/2025 01:22:56] "GET / HTTP/1.1" 200 -
+2025-05-31 01:22:56,406 INFO:127.0.0.1 - - [31/May/2025 01:22:56] "GET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1" 200 -
+2025-05-31 01:22:56,407 INFO:127.0.0.1 - - [31/May/2025 01:22:56] "GET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1" 200 -
+2025-05-31 01:22:56,409 INFO:127.0.0.1 - - [31/May/2025 01:22:56] "GET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1" 200 -
+2025-05-31 01:22:56,410 INFO:127.0.0.1 - - [31/May/2025 01:22:56] "GET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1" 200 -
+2025-05-31 01:22:56,410 INFO:127.0.0.1 - - [31/May/2025 01:22:56] "GET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1" 200 -
+2025-05-31 01:22:56,464 INFO:127.0.0.1 - - [31/May/2025 01:22:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-31 01:23:06,470 INFO:127.0.0.1 - - [31/May/2025 01:23:06] "GET / HTTP/1.1" 200 -
+2025-05-31 01:23:06,499 INFO:127.0.0.1 - - [31/May/2025 01:23:06] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:06,501 INFO:127.0.0.1 - - [31/May/2025 01:23:06] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:06,502 INFO:127.0.0.1 - - [31/May/2025 01:23:06] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:06,503 INFO:127.0.0.1 - - [31/May/2025 01:23:06] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:06,504 INFO:127.0.0.1 - - [31/May/2025 01:23:06] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:16,528 INFO:127.0.0.1 - - [31/May/2025 01:23:16] "GET / HTTP/1.1" 200 -
+2025-05-31 01:23:16,556 INFO:127.0.0.1 - - [31/May/2025 01:23:16] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:16,557 INFO:127.0.0.1 - - [31/May/2025 01:23:16] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:16,560 INFO:127.0.0.1 - - [31/May/2025 01:23:16] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:16,564 INFO:127.0.0.1 - - [31/May/2025 01:23:16] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:16,565 INFO:127.0.0.1 - - [31/May/2025 01:23:16] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:19,555 WARNING:Selenium error on http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 01:23:30,223 INFO:127.0.0.1 - - [31/May/2025 01:23:30] "GET / HTTP/1.1" 200 -
+2025-05-31 01:23:30,250 INFO:127.0.0.1 - - [31/May/2025 01:23:30] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:30,255 INFO:127.0.0.1 - - [31/May/2025 01:23:30] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:30,256 INFO:127.0.0.1 - - [31/May/2025 01:23:30] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:30,258 INFO:127.0.0.1 - - [31/May/2025 01:23:30] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:30,259 INFO:127.0.0.1 - - [31/May/2025 01:23:30] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:40,290 INFO:127.0.0.1 - - [31/May/2025 01:23:40] "GET / HTTP/1.1" 200 -
+2025-05-31 01:23:40,313 INFO:127.0.0.1 - - [31/May/2025 01:23:40] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:40,314 INFO:127.0.0.1 - - [31/May/2025 01:23:40] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:40,315 INFO:127.0.0.1 - - [31/May/2025 01:23:40] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:40,319 INFO:127.0.0.1 - - [31/May/2025 01:23:40] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:40,320 INFO:127.0.0.1 - - [31/May/2025 01:23:40] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:49,448 WARNING:Selenium error on http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%205qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:23:50,340 INFO:127.0.0.1 - - [31/May/2025 01:23:50] "GET / HTTP/1.1" 200 -
+2025-05-31 01:23:50,358 INFO:127.0.0.1 - - [31/May/2025 01:23:50] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:50,358 INFO:127.0.0.1 - - [31/May/2025 01:23:50] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:50,360 INFO:127.0.0.1 - - [31/May/2025 01:23:50] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:50,365 INFO:127.0.0.1 - - [31/May/2025 01:23:50] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:23:50,370 INFO:127.0.0.1 - - [31/May/2025 01:23:50] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:00,387 INFO:127.0.0.1 - - [31/May/2025 01:24:00] "GET / HTTP/1.1" 200 -
+2025-05-31 01:24:00,407 INFO:127.0.0.1 - - [31/May/2025 01:24:00] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:00,409 INFO:127.0.0.1 - - [31/May/2025 01:24:00] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:00,410 INFO:127.0.0.1 - - [31/May/2025 01:24:00] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:00,410 INFO:127.0.0.1 - - [31/May/2025 01:24:00] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:00,412 INFO:127.0.0.1 - - [31/May/2025 01:24:00] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:07,615 WARNING:Selenium error on http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%205qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:24:11,615 WARNING:Failed to fetch http://5qqrlc7hw3tsgokkqifb33p3mrlpnleka2bjg7n46vih2synghb6ycid.onion
+2025-05-31 01:24:11,615 INFO:Crawling http://5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php at depth 2
+2025-05-31 01:24:13,946 INFO:127.0.0.1 - - [31/May/2025 01:24:13] "GET / HTTP/1.1" 200 -
+2025-05-31 01:24:13,968 INFO:127.0.0.1 - - [31/May/2025 01:24:13] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:13,969 INFO:127.0.0.1 - - [31/May/2025 01:24:13] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:13,970 INFO:127.0.0.1 - - [31/May/2025 01:24:13] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:13,971 INFO:127.0.0.1 - - [31/May/2025 01:24:13] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:13,972 INFO:127.0.0.1 - - [31/May/2025 01:24:13] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:23,998 INFO:127.0.0.1 - - [31/May/2025 01:24:23] "GET / HTTP/1.1" 200 -
+2025-05-31 01:24:24,027 INFO:127.0.0.1 - - [31/May/2025 01:24:24] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:24,028 INFO:127.0.0.1 - - [31/May/2025 01:24:24] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:24,029 INFO:127.0.0.1 - - [31/May/2025 01:24:24] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:24,032 INFO:127.0.0.1 - - [31/May/2025 01:24:24] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:24,033 INFO:127.0.0.1 - - [31/May/2025 01:24:24] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:24,150 WARNING:Selenium error on http://5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%205hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:24:34,062 INFO:127.0.0.1 - - [31/May/2025 01:24:34] "GET / HTTP/1.1" 200 -
+2025-05-31 01:24:34,085 INFO:127.0.0.1 - - [31/May/2025 01:24:34] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:34,086 INFO:127.0.0.1 - - [31/May/2025 01:24:34] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:34,087 INFO:127.0.0.1 - - [31/May/2025 01:24:34] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:34,088 INFO:127.0.0.1 - - [31/May/2025 01:24:34] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:34,091 INFO:127.0.0.1 - - [31/May/2025 01:24:34] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:36,813 WARNING:Selenium error on http://5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%205hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:24:47,704 INFO:127.0.0.1 - - [31/May/2025 01:24:47] "GET / HTTP/1.1" 200 -
+2025-05-31 01:24:47,724 INFO:127.0.0.1 - - [31/May/2025 01:24:47] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:47,725 INFO:127.0.0.1 - - [31/May/2025 01:24:47] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:47,726 INFO:127.0.0.1 - - [31/May/2025 01:24:47] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:47,728 INFO:127.0.0.1 - - [31/May/2025 01:24:47] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:47,731 INFO:127.0.0.1 - - [31/May/2025 01:24:47] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:53,983 WARNING:Selenium error on http://5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%205hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:24:57,756 INFO:127.0.0.1 - - [31/May/2025 01:24:57] "GET / HTTP/1.1" 200 -
+2025-05-31 01:24:57,776 INFO:127.0.0.1 - - [31/May/2025 01:24:57] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:57,777 INFO:127.0.0.1 - - [31/May/2025 01:24:57] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:57,778 INFO:127.0.0.1 - - [31/May/2025 01:24:57] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:57,783 INFO:127.0.0.1 - - [31/May/2025 01:24:57] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:57,783 INFO:127.0.0.1 - - [31/May/2025 01:24:57] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:24:57,983 WARNING:Failed to fetch http://5hxxw4p4adget6dkbjflg2cfmktf5ojoq2sw5xyr6v4ekz6b4x56drad.onion/index.php
+2025-05-31 01:24:57,983 INFO:Crawling http://cardh5ihxbnljbh6ipjt5v5crpqgvt7umtqbuphm7ezh2anikwby5yqd.onion at depth 2
+2025-05-31 01:25:07,802 INFO:127.0.0.1 - - [31/May/2025 01:25:07] "GET / HTTP/1.1" 200 -
+2025-05-31 01:25:07,824 INFO:127.0.0.1 - - [31/May/2025 01:25:07] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:07,825 INFO:127.0.0.1 - - [31/May/2025 01:25:07] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:07,826 INFO:127.0.0.1 - - [31/May/2025 01:25:07] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:07,828 INFO:127.0.0.1 - - [31/May/2025 01:25:07] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:07,829 INFO:127.0.0.1 - - [31/May/2025 01:25:07] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:18,986 INFO:Analyzing http://cardh5ihxbnljbh6ipjt5v5crpqgvt7umtqbuphm7ezh2anikwby5yqd.onion
+2025-05-31 01:25:21,433 INFO:127.0.0.1 - - [31/May/2025 01:25:21] "GET / HTTP/1.1" 200 -
+2025-05-31 01:25:21,454 INFO:127.0.0.1 - - [31/May/2025 01:25:21] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:21,455 INFO:127.0.0.1 - - [31/May/2025 01:25:21] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:21,457 INFO:127.0.0.1 - - [31/May/2025 01:25:21] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:21,458 INFO:127.0.0.1 - - [31/May/2025 01:25:21] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:21,459 INFO:127.0.0.1 - - [31/May/2025 01:25:21] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:25,786 INFO:Screenshot saved to outputs/cardh5ihxbnljbh6ipjt5v5crpqgvt7umtqbuphm7ezh2anikwby5yqd.onion.png
+2025-05-31 01:25:28,801 INFO:Crawling http://kkbehofrzxvktii7vkxm4loor6vcgcy4yfo4gpgutarn72qr37tez4ad.onion at depth 2
+2025-05-31 01:25:31,483 INFO:127.0.0.1 - - [31/May/2025 01:25:31] "GET / HTTP/1.1" 200 -
+2025-05-31 01:25:31,512 INFO:127.0.0.1 - - [31/May/2025 01:25:31] "GET /screenshots/cardh5ihxbnljbh6ipjt5v5crpqgvt7umtqbuphm7ezh2anikwby5yqd.onion.png HTTP/1.1" 200 -
+2025-05-31 01:25:31,514 INFO:127.0.0.1 - - [31/May/2025 01:25:31] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:31,516 INFO:127.0.0.1 - - [31/May/2025 01:25:31] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:31,518 INFO:127.0.0.1 - - [31/May/2025 01:25:31] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:31,520 INFO:127.0.0.1 - - [31/May/2025 01:25:31] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:31,521 INFO:127.0.0.1 - - [31/May/2025 01:25:31] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:41,508 INFO:Analyzing http://kkbehofrzxvktii7vkxm4loor6vcgcy4yfo4gpgutarn72qr37tez4ad.onion
+2025-05-31 01:25:41,547 INFO:127.0.0.1 - - [31/May/2025 01:25:41] "GET / HTTP/1.1" 200 -
+2025-05-31 01:25:41,570 INFO:127.0.0.1 - - [31/May/2025 01:25:41] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:41,571 INFO:127.0.0.1 - - [31/May/2025 01:25:41] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:41,572 INFO:127.0.0.1 - - [31/May/2025 01:25:41] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:41,573 INFO:127.0.0.1 - - [31/May/2025 01:25:41] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:41,575 INFO:127.0.0.1 - - [31/May/2025 01:25:41] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:41,578 INFO:127.0.0.1 - - [31/May/2025 01:25:41] "[36mGET /screenshots/cardh5ihxbnljbh6ipjt5v5crpqgvt7umtqbuphm7ezh2anikwby5yqd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:55,177 INFO:127.0.0.1 - - [31/May/2025 01:25:55] "GET / HTTP/1.1" 200 -
+2025-05-31 01:25:55,198 INFO:127.0.0.1 - - [31/May/2025 01:25:55] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:55,200 INFO:127.0.0.1 - - [31/May/2025 01:25:55] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:55,202 INFO:127.0.0.1 - - [31/May/2025 01:25:55] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:55,204 INFO:127.0.0.1 - - [31/May/2025 01:25:55] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:55,205 INFO:127.0.0.1 - - [31/May/2025 01:25:55] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:55,206 INFO:127.0.0.1 - - [31/May/2025 01:25:55] "[36mGET /screenshots/cardh5ihxbnljbh6ipjt5v5crpqgvt7umtqbuphm7ezh2anikwby5yqd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:25:55,620 INFO:Screenshot saved to outputs/kkbehofrzxvktii7vkxm4loor6vcgcy4yfo4gpgutarn72qr37tez4ad.onion.png
+2025-05-31 01:25:58,621 INFO:Crawling http://torbookp6ougjm42lzt4gzki3ozprktiekhqydwavp26d5m3ewjr3fad.onion at depth 2
+2025-05-31 01:26:05,225 INFO:127.0.0.1 - - [31/May/2025 01:26:05] "GET / HTTP/1.1" 200 -
+2025-05-31 01:26:05,247 INFO:127.0.0.1 - - [31/May/2025 01:26:05] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:26:05,249 INFO:127.0.0.1 - - [31/May/2025 01:26:05] "[36mGET /screenshots/darkmond65ucj7scvxquhmm2nbfm5tvkqi75xpf7czat73j67yute7ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:26:05,250 INFO:127.0.0.1 - - [31/May/2025 01:26:05] "[36mGET /screenshots/tortimeswqlzti2aqbjoieisne4ubyuoeiiugel2layyudcfrwln76qd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:26:05,252 INFO:127.0.0.1 - - [31/May/2025 01:26:05] "[36mGET /screenshots/hxuzjtocnzvv5g2rtg2bhwkcbupmk7rclb6lly3fo4tvqkk5oyrv3nid.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:26:05,253 INFO:127.0.0.1 - - [31/May/2025 01:26:05] "[36mGET /screenshots/search7tdrcvri22rieiwgi5g46qnwsesvnubqav2xakhezv4hjzkkad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:26:05,254 INFO:127.0.0.1 - - [31/May/2025 01:26:05] "[36mGET /screenshots/cardh5ihxbnljbh6ipjt5v5crpqgvt7umtqbuphm7ezh2anikwby5yqd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:26:05,387 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /session/0c0ba3eb-e64d-45b0-a3b5-cd57afad16a2
+2025-05-31 01:26:05,387 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87b1334f10>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0c0ba3eb-e64d-45b0-a3b5-cd57afad16a2
+2025-05-31 01:26:05,388 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f87b1337450>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/0c0ba3eb-e64d-45b0-a3b5-cd57afad16a2
+2025-05-31 01:27:34,627 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 01:27:34,627 INFO:[33mPress CTRL+C to quit[0m
+2025-05-31 01:27:42,318 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-31 01:27:46,991 INFO:127.0.0.1 - - [31/May/2025 01:27:46] "GET / HTTP/1.1" 200 -
+2025-05-31 01:27:47,185 INFO:127.0.0.1 - - [31/May/2025 01:27:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-31 01:27:57,120 INFO:127.0.0.1 - - [31/May/2025 01:27:57] "GET / HTTP/1.1" 200 -
+2025-05-31 01:28:07,149 INFO:127.0.0.1 - - [31/May/2025 01:28:07] "GET / HTTP/1.1" 200 -
+2025-05-31 01:28:09,111 INFO:Analyzing http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion
+2025-05-31 01:28:09,165 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f358d8f1750>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/32706811-7122-4281-bb2c-2cf4a38e32d2
+2025-05-31 01:28:09,166 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f358d8f1e50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/32706811-7122-4281-bb2c-2cf4a38e32d2
+2025-05-31 01:28:09,167 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f358d8f2750>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/32706811-7122-4281-bb2c-2cf4a38e32d2
+2025-05-31 01:28:28,567 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 01:28:28,567 INFO:[33mPress CTRL+C to quit[0m
+2025-05-31 01:28:32,153 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-31 01:28:35,630 INFO:127.0.0.1 - - [31/May/2025 01:28:35] "GET / HTTP/1.1" 200 -
+2025-05-31 01:28:45,987 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7faf05b570d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/e238d6e4-4735-4e7f-b131-8a3d9d943689
+2025-05-31 01:28:45,988 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7faf05b56f10>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/e238d6e4-4735-4e7f-b131-8a3d9d943689
+2025-05-31 01:28:45,988 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7faf05b64c50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/e238d6e4-4735-4e7f-b131-8a3d9d943689
+2025-05-31 01:29:30,026 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 01:29:30,027 INFO:[33mPress CTRL+C to quit[0m
+2025-05-31 01:29:33,769 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-31 01:29:39,074 INFO:127.0.0.1 - - [31/May/2025 01:29:39] "GET / HTTP/1.1" 200 -
+2025-05-31 01:29:49,210 INFO:127.0.0.1 - - [31/May/2025 01:29:49] "GET / HTTP/1.1" 200 -
+2025-05-31 01:29:59,234 INFO:127.0.0.1 - - [31/May/2025 01:29:59] "GET / HTTP/1.1" 200 -
+2025-05-31 01:30:07,344 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 01:30:12,811 INFO:127.0.0.1 - - [31/May/2025 01:30:12] "GET / HTTP/1.1" 200 -
+2025-05-31 01:30:22,836 INFO:127.0.0.1 - - [31/May/2025 01:30:22] "GET / HTTP/1.1" 200 -
+2025-05-31 01:30:32,856 INFO:127.0.0.1 - - [31/May/2025 01:30:32] "GET / HTTP/1.1" 200 -
+2025-05-31 01:30:41,983 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 01:30:46,511 INFO:127.0.0.1 - - [31/May/2025 01:30:46] "GET / HTTP/1.1" 200 -
+2025-05-31 01:30:56,531 INFO:127.0.0.1 - - [31/May/2025 01:30:56] "GET / HTTP/1.1" 200 -
+2025-05-31 01:31:06,554 INFO:127.0.0.1 - - [31/May/2025 01:31:06] "GET / HTTP/1.1" 200 -
+2025-05-31 01:31:17,504 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 01:31:20,092 INFO:127.0.0.1 - - [31/May/2025 01:31:20] "GET / HTTP/1.1" 200 -
+2025-05-31 01:31:21,505 WARNING:Failed to fetch http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion
+2025-05-31 01:31:22,041 INFO:Crawling completed.
+2025-05-31 01:31:30,118 INFO:127.0.0.1 - - [31/May/2025 01:31:30] "GET / HTTP/1.1" 200 -
+2025-05-31 01:31:40,140 INFO:127.0.0.1 - - [31/May/2025 01:31:40] "GET / HTTP/1.1" 200 -
+2025-05-31 01:31:53,793 INFO:127.0.0.1 - - [31/May/2025 01:31:53] "GET / HTTP/1.1" 200 -
+2025-05-31 01:32:03,811 INFO:127.0.0.1 - - [31/May/2025 01:32:03] "GET / HTTP/1.1" 200 -
+2025-05-31 01:32:04,272 INFO:Exiting on user interrupt.
+2025-05-31 01:32:04,273 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f47cbfa5150>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/952e4485-b49f-46e8-962f-8560452a0f48
+2025-05-31 01:32:04,274 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f47cbfa1050>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/952e4485-b49f-46e8-962f-8560452a0f48
+2025-05-31 01:32:04,275 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f47cbf88b90>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/952e4485-b49f-46e8-962f-8560452a0f48
+2025-05-31 01:34:44,945 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 01:34:44,945 INFO:[33mPress CTRL+C to quit[0m
+2025-05-31 01:34:52,765 INFO:Crawling http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion at depth 0
+2025-05-31 01:35:00,940 INFO:127.0.0.1 - - [31/May/2025 01:35:00] "GET / HTTP/1.1" 200 -
+2025-05-31 01:35:01,135 INFO:127.0.0.1 - - [31/May/2025 01:35:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-31 01:35:11,085 INFO:127.0.0.1 - - [31/May/2025 01:35:11] "GET / HTTP/1.1" 200 -
+2025-05-31 01:35:21,112 INFO:127.0.0.1 - - [31/May/2025 01:35:21] "GET / HTTP/1.1" 200 -
+2025-05-31 01:35:26,356 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 01:35:34,708 INFO:127.0.0.1 - - [31/May/2025 01:35:34] "GET / HTTP/1.1" 200 -
+2025-05-31 01:35:44,730 INFO:127.0.0.1 - - [31/May/2025 01:35:44] "GET / HTTP/1.1" 200 -
+2025-05-31 01:35:54,755 INFO:127.0.0.1 - - [31/May/2025 01:35:54] "GET / HTTP/1.1" 200 -
+2025-05-31 01:35:57,361 WARNING:Selenium error on http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 01:36:08,465 INFO:127.0.0.1 - - [31/May/2025 01:36:08] "GET / HTTP/1.1" 200 -
+2025-05-31 01:36:18,485 INFO:127.0.0.1 - - [31/May/2025 01:36:18] "GET / HTTP/1.1" 200 -
+2025-05-31 01:36:28,507 INFO:127.0.0.1 - - [31/May/2025 01:36:28] "GET / HTTP/1.1" 200 -
+2025-05-31 01:36:31,883 INFO:Analyzing http://bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion
+2025-05-31 01:36:42,048 INFO:127.0.0.1 - - [31/May/2025 01:36:42] "GET / HTTP/1.1" 200 -
+2025-05-31 01:36:52,071 INFO:127.0.0.1 - - [31/May/2025 01:36:52] "GET / HTTP/1.1" 200 -
+2025-05-31 01:36:57,903 INFO:Screenshot saved to outputs/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png
+2025-05-31 01:37:00,914 INFO:Crawling http://dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion at depth 1
+2025-05-31 01:37:02,092 INFO:127.0.0.1 - - [31/May/2025 01:37:02] "GET / HTTP/1.1" 200 -
+2025-05-31 01:37:02,118 INFO:127.0.0.1 - - [31/May/2025 01:37:02] "GET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1" 200 -
+2025-05-31 01:37:15,698 INFO:127.0.0.1 - - [31/May/2025 01:37:15] "GET / HTTP/1.1" 200 -
+2025-05-31 01:37:15,717 INFO:127.0.0.1 - - [31/May/2025 01:37:15] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:37:23,078 WARNING:Selenium error on http://dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:37:25,731 INFO:127.0.0.1 - - [31/May/2025 01:37:25] "GET / HTTP/1.1" 200 -
+2025-05-31 01:37:25,751 INFO:127.0.0.1 - - [31/May/2025 01:37:25] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:37:35,770 INFO:127.0.0.1 - - [31/May/2025 01:37:35] "GET / HTTP/1.1" 200 -
+2025-05-31 01:37:35,810 INFO:127.0.0.1 - - [31/May/2025 01:37:35] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:37:36,269 WARNING:Selenium error on http://dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:37:49,355 INFO:127.0.0.1 - - [31/May/2025 01:37:49] "GET / HTTP/1.1" 200 -
+2025-05-31 01:37:49,377 INFO:127.0.0.1 - - [31/May/2025 01:37:49] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:37:58,471 WARNING:Selenium error on http://dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion: Message: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:736:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:61:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:329:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:154:20
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:35:25
+
+2025-05-31 01:37:59,396 INFO:127.0.0.1 - - [31/May/2025 01:37:59] "GET / HTTP/1.1" 200 -
+2025-05-31 01:37:59,415 INFO:127.0.0.1 - - [31/May/2025 01:37:59] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:38:02,472 WARNING:Failed to fetch http://dreamuu7hyw75p2qf5w24cibi3akvdrrpdeeukadbypc6kbdumpod3id.onion
+2025-05-31 01:38:02,472 INFO:Crawling http://darkn5g756epq6t6fkqdo3mvkxlvwjtgabsbh3x47yhqg3uguiy5z5yd.onion at depth 1
+2025-05-31 01:38:09,430 INFO:127.0.0.1 - - [31/May/2025 01:38:09] "GET / HTTP/1.1" 200 -
+2025-05-31 01:38:09,453 INFO:127.0.0.1 - - [31/May/2025 01:38:09] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:38:19,472 INFO:127.0.0.1 - - [31/May/2025 01:38:19] "GET / HTTP/1.1" 200 -
+2025-05-31 01:38:19,492 INFO:127.0.0.1 - - [31/May/2025 01:38:19] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:38:33,144 INFO:127.0.0.1 - - [31/May/2025 01:38:33] "GET / HTTP/1.1" 200 -
+2025-05-31 01:38:33,166 INFO:127.0.0.1 - - [31/May/2025 01:38:33] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:38:36,115 WARNING:Selenium error on http://darkn5g756epq6t6fkqdo3mvkxlvwjtgabsbh3x47yhqg3uguiy5z5yd.onion: Message: Navigation timed out after 30000 ms
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:187:5
+TimeoutError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:674:5
+bail@chrome://remote/content/marionette/sync.sys.mjs:213:19
+
+2025-05-31 01:38:43,186 INFO:127.0.0.1 - - [31/May/2025 01:38:43] "GET / HTTP/1.1" 200 -
+2025-05-31 01:38:43,205 INFO:127.0.0.1 - - [31/May/2025 01:38:43] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:38:53,220 INFO:127.0.0.1 - - [31/May/2025 01:38:53] "GET / HTTP/1.1" 200 -
+2025-05-31 01:38:53,239 INFO:127.0.0.1 - - [31/May/2025 01:38:53] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:38:54,334 INFO:Analyzing http://darkn5g756epq6t6fkqdo3mvkxlvwjtgabsbh3x47yhqg3uguiy5z5yd.onion
+2025-05-31 01:39:04,435 INFO:Screenshot saved to outputs/darkn5g756epq6t6fkqdo3mvkxlvwjtgabsbh3x47yhqg3uguiy5z5yd.onion.png
+2025-05-31 01:39:06,843 INFO:127.0.0.1 - - [31/May/2025 01:39:06] "GET / HTTP/1.1" 200 -
+2025-05-31 01:39:06,862 INFO:127.0.0.1 - - [31/May/2025 01:39:06] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:39:06,862 INFO:127.0.0.1 - - [31/May/2025 01:39:06] "GET /screenshots/darkn5g756epq6t6fkqdo3mvkxlvwjtgabsbh3x47yhqg3uguiy5z5yd.onion.png HTTP/1.1" 200 -
+2025-05-31 01:39:07,495 INFO:Crawling http://ddenupaqxuvvilo4yetjv3qbq7p45vqbrr7vd2fmorjglh5bk7uh73id.onion at depth 1
+2025-05-31 01:39:16,882 INFO:127.0.0.1 - - [31/May/2025 01:39:16] "GET / HTTP/1.1" 200 -
+2025-05-31 01:39:16,902 INFO:127.0.0.1 - - [31/May/2025 01:39:16] "[36mGET /screenshots/darkn5g756epq6t6fkqdo3mvkxlvwjtgabsbh3x47yhqg3uguiy5z5yd.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:39:16,903 INFO:127.0.0.1 - - [31/May/2025 01:39:16] "[36mGET /screenshots/bobby64o755x3gsuznts6hf6agxqjcz5bop6hs7ejorekbm7omes34ad.onion.png HTTP/1.1[0m" 304 -
+2025-05-31 01:39:17,882 WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2a8215b8d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a21a266d-07c4-4d1b-8bb5-6825862f884e
+2025-05-31 01:39:17,882 WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2a82a761d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a21a266d-07c4-4d1b-8bb5-6825862f884e
+2025-05-31 01:39:17,883 WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2a809b3990>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/a21a266d-07c4-4d1b-8bb5-6825862f884e
