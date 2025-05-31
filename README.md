@@ -101,13 +101,13 @@ pip install -r requirements.txt
 Run the crawler with a starting `.onion` URL:
 
 ```bash
-python main.py <onion_url>
+python3 main.py <onion_url>
 ```
 
 Example:
 
 ```bash
-python main.py http://exampleonionaddress.onion
+python3 main.py http://exampleonionaddress.onion
 ```
 
 - The crawler will begin fetching pages through Tor, capturing screenshots, and analyzing content.
