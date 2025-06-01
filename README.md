@@ -138,8 +138,10 @@ python3 main.py http://exampleonionaddress.onion
 
 ## YouTube Demo Preview
 
-[![Demo Video](path/to/![WhatsApp Image 2025-05-31 at 21 55 17_4e97f697](https://github.com/user-attachments/assets/a374f274-78ae-457d-a588-af1fc50c9622)
+[![Watch the demo](images/![WhatsApp Image 2025-05-31 at 21 55 17_4e97f697](https://github.com/user-attachments/assets/abc896a0-c21c-4647-99b9-ce9b7c24af9b)
 )](https://www.youtube.com/watch?v=RXVBT_HXq7w)
+
+
 
 This demo showcases the core functionality and features we've implemented
 to effectively crawl and extract data from the dark web while
