@@ -126,22 +126,15 @@ python3 main.py http://exampleonionaddress.onion
 
 ## Screenshots
 
-![Dashboard Screenshot](path/to/![DashboardScreenshot](https://github.com/user-attachments/assets/ae148de2-2005-4f20-bba2-cbcd00197d0c)
+![Dashboard Screenshot](https://github.com/user-attachments/assets/ae148de2-2005-4f20-bba2-cbcd00197d0c)
 
-
-)  
-![Crawler Screenshot](path/to/![CrawlerScreenshot](https://github.com/user-attachments/assets/a673e7aa-2ce4-434d-abaf-da530b59b955)
-
-)
+![Crawler Screenshot](https://github.com/user-attachments/assets/a673e7aa-2ce4-434d-abaf-da530b59b955)
 
 ---
 
 ## YouTube Demo Preview
 
-[![Watch the demo](images/![WhatsApp Image 2025-05-31 at 21 55 17_4e97f697](https://github.com/user-attachments/assets/abc896a0-c21c-4647-99b9-ce9b7c24af9b)
-)](https://www.youtube.com/watch?v=RXVBT_HXq7w)
-
-
+[![Watch the demo](https://github.com/user-attachments/assets/abc896a0-c21c-4647-99b9-ce9b7c24af9b)](https://www.youtube.com/watch?v=RXVBT_HXq7w)
 
 This demo showcases the core functionality and features we've implemented
 to effectively crawl and extract data from the dark web while
