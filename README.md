@@ -126,10 +126,12 @@ python3 main.py http://exampleonionaddress.onion
 
 ## Screenshots
 
-![Dashboard Screenshot](path/to/![image]![CrawlerScreenshot](https://github.com/user-attachments/assets/bcad8657-45d7-4818-8f58-874b2f1f289e)
+![Dashboard Screenshot](path/to/![DashboardScreenshot](https://github.com/user-attachments/assets/ae148de2-2005-4f20-bba2-cbcd00197d0c)
+
 
 )  
-![Crawler Screenshot](path/to/![image](https://github.com/user-attachments/assets/76e93bbe-9478-42f7-a93d-07992a0ad217)
+![Crawler Screenshot](path/to/![CrawlerScreenshot](https://github.com/user-attachments/assets/a673e7aa-2ce4-434d-abaf-da530b59b955)
+
 )
 
 ---
