@@ -126,7 +126,8 @@ python3 main.py http://exampleonionaddress.onion
 
 ## Screenshots
 
-![Dashboard Screenshot](path/to/![image](https://github.com/user-attachments/assets/8db686da-ffc2-493b-9c58-00422607fef6)
+![Dashboard Screenshot](path/to/![image]![CrawlerScreenshot](https://github.com/user-attachments/assets/bcad8657-45d7-4818-8f58-874b2f1f289e)
+
 )  
 ![Crawler Screenshot](path/to/![image](https://github.com/user-attachments/assets/76e93bbe-9478-42f7-a93d-07992a0ad217)
 )
